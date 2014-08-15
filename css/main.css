@@ -1,276 +1,97 @@
-/**
-
-Generalized Styling for TGBR
-Jason Kastrup
-August 2014
-DWS2 - P1
-
+/*
+	Jason Kastrup
+	Designing for Web Standards II
+	Project 2
+	Custom styles applied to bootstrap
 */
 
-body{
-	font: 100% "Helvetica Neue", Arial, Helvetica;
-	max-width: 900px;
-	margin: 4% auto;
-
+body {
+	padding-top: 70px;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
-#wrapper {
-	width: 100%;
-	margin: 0 auto;
-	overflow: hidden;
-	
-	/* Gradient Background */
-	background: #91e842; /* Old browsers */
-	background: -moz-linear-gradient(top, #91e842 0%, #d2ff52 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#91e842), color-stop(100%,#d2ff52)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #91e842 0%,#d2ff52 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #91e842 0%,#d2ff52 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #91e842 0%,#d2ff52 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #91e842 0%,#d2ff52 100%); /* W3C */
-	/* End Gradient Background */
-	
-	/* Box Shadow */
-	-webkit-box-shadow: 1px 0px 22px 5px rgba(50, 50, 50, 0.5);
-	-moz-box-shadow: 1px 0px 22px 5px rgba(50, 50, 50, 0.5);
-	box-shadow: 1px 0px 22px 5px rgba(50, 50, 50, 0.5);
-	/* End Box Shadow */
-	border: 2px solid #444;
-}
-
-nav {
-	text-align: center;
-	border-top: 1px solid #444;
-	border-bottom: 1px solid #444;
-	width: 100%;
-	margin: 0 auto;
-	background: #fff;
+/* Navigation bar options */
+.navbar-inverse .navbar-toggle {
+	color: #fff;
 	font-weight: bold;
+	border-color: #fff;
+} 
+.navbar-inverse .navbar-toggle:hover {
+	background-color: #ddd;
+	color: #333;
+}
+.navbar-inverse .navbar-toggle .glyphicon {
+	color: #fff;
+}
+.navbar-inverse .navbar-toggle:hover .glyphicon {
+	color: #333;
 }
 
-/* unvisited link */
-nav a:link {
-    color: #540cef;
+/* changes 'power button icon' color */
+.glyphicon.glyphicon-off {
+	color: red;
 }
 
-/* visited link */
-nav a:visited {
-    color: #540cef;
-}
-
-/* mouse over link */
-nav a:hover {
-    background: #dbdbdb;
-}
-
-/* selected link */
-nav a:active {
-    background #dbdbdb;
-}
-
-/* All list item elements in unordered lists found in the nav element */
-nav ul li {
-	display: inline-block;
-	margin: 0 5%;
-}
-
-
+/* main article options */
 article {
-	float: left;
-	width: 55.555555555556%;	/* 500px / 900px */
-	margin: 2%;	
-	background: #fff;
-	padding: 0 2%;
-	border: 1px solid #207ce5;
-	border-radius: 1%;
+	border: 2px solid #999;
+	border-radius: 5px;
+	padding-left: 1%;
+	margin: 4% 0;
 }
-
-/* Selects the second h2 in header elements (Featured Game Tittle) */
-header h2:nth-child(2){
-	border-bottom: 2px solid #444;
+.page-header {
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	border-radius: 5px;
+	border-bottom: 2px solid #999;
 }
-
-/* Selects the img element that is the first child of an <a> tag */
-a[target="_blank"] {
-	width:	40%;
-	height: 57.311475409836%;
+.page-logo {
 	float: right;
-}
-
-a[target="_blank"] img:first-child {
-	width:	100%;
-	margin: 2%;
-	border: 1px solid #207ce5;
-}
-
-#thumbgal{
-	text-align: center;
-	border-bottom: 1px solid #444;
-	border-top: 1px solid #444;
-}
-
-/* Selects all images in the #thumbgal */
-#thumbgal img {
-	margin: 1% 1%;
-	display: inline-block;
-}
-
-/* Selects all sections that are direct children of the aside element */
-aside > section {
-	clear: right;
-	float: right;
-	width: 30%;
-	margin: 1%;
-	margin-top: 2%;
-	padding: 1%;
-	background: #fff;
-	border: 1px solid #207ce5;
-	border-radius: 2%;
-}
-
-h1 {
+	max-width: 50%;
 	margin: 2% auto;
-	width: 98%;
+	padding: 2%;
 }
 
-/* Selects all h2 elements inside aside elements */
-aside h2 {
-	float: left;
-	font-size: 1.1em;
-	width: 60%
-}
-
-/* Selects all img elements inside aside elements */
-aside img {
+/* game review photo options */
+.gallery {
+	max-width: 40%;
+	max-height: 300px;
 	float: right;
 }
 
-/* Selects all p elements inside aside elements */
-aside p {
-	clear: both;
-	padding-top: 2%;
+/* About ThrowBack Games class options */
+.about-tbg {
+	margin: 4% 1%;
+	padding-top: 1%;
+	border-top: 2px solid #999;
+}
+.atbg-head span{
+	color: #66FF66;
 }
 
-/* Selects all section elements inside aside elements */
-aside section:hover{
-	border-color: red;
+/* .btn class options */
+.btn {
+	background-color: #66FF66;
+}
+.btn:hover {
+	background-color: #66CC66;
 }
 
+
+.panel-heading {
+	background-color: #66FF66;
+}
+
+/* page footer options */
 footer {
-	clear: both;
-	color: #fff;
 	text-align: center;
-	border-top: 1px solid #444;
-	background: #444;
-	padding: 2% 0;
+	border-top: 2px solid #999;
+	margin-top: 1%;
+	padding-top: 5%;
+	background-color: #66FF66;
 }
-
-/* Selects all anchor elements inside address elements */
-address a {
-	color: #fff;
-}
-
-/* default setting for Back to Top links */
-
-.btt {
-	display: none;	
-}
-
-/* Media queries for differing screen sizes. */
-@media (max-width: 582px) {
-/* Code for mobile only */
-	nav ul li {
-		display: block;
-		margin: 5% 0;
-	}
-	
-	a img:first-child {
-		display: none;
-	}
-	
-	article{
-		width: 90%;
-		margin: 2%;
-		padding: 0 2%;
-	}
-	
-	aside section {
-		clear: both;
-		width: 94%;
-		margin: 2%;
-	}
-	
-	.btt {
-		display: block;
-	}
-	
-	
-}
-
-@media (min-width: 582) and (max-width: 750px){
-/* code for tablets only */	
-	h1 {
-		text-align: center;
-	}
-	
-	#thumbgal {
-		clear: both;
-	}
-	
-	.btt {
-		display: none;
-	}
-}
-
-@media (min-width: 1100px) {
-/* code for desktop/larger */
-	article {
-		width: 90%;
-		margin-left: 2.5%;
-	}
-	
-	article p {
-		text-align: left;
-	}
-	
-	a[target="_blank"] {
-		margin-left: 2%;
-	}
-	
-	h3 { 
-		clear: both;
-	}
-	
-	h3:first-of-type{
-		padding-top: 2%;
-	}
-	
-	aside section{
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-	
-	aside section > h2:first-child{
-		margin-left: 0;
-		padding-left: 0;
-	}
-		
-	#thumbgal {
-		float: left;
-	}
-	
-	#thumbgal{
-		clear: both;
-		float: left;
-		width: 98%;
-	}
-	
-	.btt {
-		display: block;
-	}
-}
-
-
 
 
 
