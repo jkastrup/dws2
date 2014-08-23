@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	Jason Kastrup
+	Designing for Web Standards II
+	Project 2
+	ThrowBACK Games Home page test3
+-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>ThrowBACK Games</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+    <script src="js/respond.min.js" type="text/javascript"></script>
+    <script>$("textarea").resizable();</script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+  </head>
+  
+  <body>
+  	<div id="container">
+
+
+  		<form id="form" class="main">
+  			<h2>Request a Game Review</h2>
+        <fieldset title="Contact Information">
+  				<legend>Contact Information</legend>
+  				<ol>
+  					<li>
+  						<label for="myName">Name *</label>
+  						<input type="text" name="myName" id="myName" autofocus placeholder="Last, First" required />
+  					</li>
+  					<li>
+  						<label for="myEmail">Email *</label>
+  						<input type="email" name="myEmail" id="myEmail" required placeholder="Please enter a valid email address" autocomplete="on" />
+  					</li>
+  					<li>
+  						<label for="myAge">Age *</label>
+  						<input type="number" size="6" id="myAge" name="myAge" min="13" max="110" placeholder="Age" required />
+  					</li>
+  					<li>
+  						<label for="myTel">Telephone</label>
+  						<input type="tel" name="myTel" id="myTel" placeholder="xxx-xxx-xxxx" />
+  					</li>
+  				</ol>
+  			</fieldset>
+
+  			<fieldset title="Review Request Information">
+  				<legend>Review Request Information</legend>
+  				<ol>
+  					<li>
+  						<label for="gameName">Game Name *</label>
+  						<input type="text" name="gameName" id="gameName" placeholder="What game?" required />
+  					</li>
+  					<li>
+  						<label for="myGenre">Game Genre</label>
+              <ol>
+                <li>
+                  <input type="radio" name="favGenre" id="actionFav" value="action">
+                  <label for="actionFav" class="sublab">Action</label>
+                </li>
+                <li>  
+                  <input type="radio" name="favGenre" id="adFav" value="adventure">
+                  <label for="adFav" class="sublab">Adventure</label>
+                </li>
+                <li>
+                  <input type="radio" name="favGenre" id="stratFav" value="strategy">
+                  <label for="stratFav" class="sublab">Strategy</label> 
+                </li>
+                <li>
+                  <input type="radio" name="favGenre" id="rpgFav" value="rpg">
+                  <label for="rpgFav" class="sublab">RPG</label>
+                </li>
+                <li>
+                  <input type="radio" name="favGenre" id="mmoFav" value="mmo">
+                  <label for="mmoFav" class="sublab">MMO</label>
+                </li>
+                <li>
+                  <input type="radio" name="favGenre" id="racFav" value="racing">
+                  <label for="racFav" class="sublab">Racing</label>
+                </li>
+                <li>
+                  <input type="radio" name="favGenre" id="simFav" value="sim">
+                  <label for="simFav" class="sublab">Simulation</label>
+                </li>
+                <li>
+                  <input type="radio" name="favGenre" id="sportFav" value="sports">
+                  <label for="sportFav" class="sublab">Sports</label>
+                </li>
+              </ol>
+            </li>
+  					<li>
+  						<label for="releaseYear">Year of Release</label>
+  						<input type="number" name="releaseYear" id="releaseYear" size="6" min="1960" max="3000" placeholder="1999" />
+  					</li>
+  					<li>
+  						<label for="whyReview">Why Review? *</label>
+  						<textarea name="whyReview" id="whyReview" required placeholder="Please tell us all about this game and why it needs reviewed!"></textarea>
+  					</li>
+  				</ol>
+  			</fieldset>
+
+  			<fieldset title="Quick Survey">
+  				<legend>Quick Survey</legend>
+          <ol>
+            <li>
+              <input type="checkbox" name="maillist" id="maillist" value="yes">
+              <label for="maillist" class="sublab">Subscribe to our mailing list?</label>
+            </li>
+            <li>
+      				<label for="favGenre">Favorite Genre</label>
+              <p class="labinfo">Select all that apply</p>
+      				<ol>
+                <li>
+                  <input type="checkbox" name="myGenre" id="actGen" value="action">
+                  <label for="actGen" class="sublab">Action</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="myGenre" id="advGen" value="adventure">
+                  <label for="advGen" class="sublab">Adventure</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="myGenre" id="stratGen" value="strategy">
+                  <label for="stratGen" class="sublab">Strategy</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="myGenre" id="rpgGen" value="rpg">
+                  <label for="rpgGen" class="sublab">RPG</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="myGenre" id="mmoGen" value="mmo">
+                  <label for="mmoGen" class="sublab">MMO</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="myGenre" id="raceGen" value="racing">
+                  <label for="raceGen" class="sublab">Racing</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="myGenre" id="simGen" value="sim">
+                  <label for="simGen" class="sublab">Simulation</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="myGenre" id="sportGen" value="sports">
+                  <label for="sportGen" class="sublab">Sports</label>
+                </li>
+              </ol>
+            </li>
+            <li>
+        			<label for="favPlat">Favorite Platform/Brand</label>
+              <select name="favPlat" id="favPlat">
+                <option value="pc">PC</option>
+                <option value="xbox">Xbox</option>
+                <option vlaue="playstation">Playstation</option>
+                <option value="Wii">Wii</option>
+                <option value="hhp">Handheld/Portable</option>
+                <option value="other">Other</option>
+              </select>
+            </li>
+            <li>
+        		  <label for="dob">Date of Birth</label>
+        		  <input type="date" name="dob" id="dob" placeholder="mm/dd/yyyy" />
+            </li>
+            <li>
+              <label for="rtw">Rate this website!</label>
+              <p class="labinfo">Just use the slider</p>
+              Hate it! <input type="range" name="rtw" id="rtw" min="1" max="10"> Love it!
+            </li>
+          </ol>
+           <br>
+          <button type="submit" class="button submitbtn">Submit Request</button>
+          <br>
+          <br>
+  			</fieldset>
+        
+  		</form>
+
+  		
+	</div><!-- end #container -->
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
