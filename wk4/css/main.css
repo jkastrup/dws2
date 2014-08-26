@@ -8,7 +8,7 @@ main.css
 	margin: 0 auto;
 }
 nav {
-	padding-top: 20px;
+
 }
 nav ol {
 	list-style: none;
@@ -20,7 +20,7 @@ nav ol li {
 	width: 80%;
 	height: 5em;
 	text-align: center;
-	margin: 10% auto;
+	margin: 8% auto;
 	border: 1px solid #000;
 }
 .bigonly {
