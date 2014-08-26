@@ -2,10 +2,13 @@
 main.css
 */
 
+/** Default styles are for MOBILE devices **/
 #wrapper {
 	width: 100%;
 	margin: 0 auto;
-
+}
+nav {
+	padding-top: 20px;
 }
 nav ol {
 	list-style: none;
@@ -17,8 +20,11 @@ nav ol li {
 	width: 80%;
 	height: 5em;
 	text-align: center;
-	margin: 1% auto;
+	margin: 10% auto;
 	border: 1px solid #000;
+}
+.bigonly {
+	display: none;
 }
 
 
@@ -33,5 +39,15 @@ hgroup * {
 
 article {
 	border-top: 1px solid #000;
-	margin-top: 30px
+	margin-top: 75px
+}
+
+
+@media only screen and (min-width: 700px) {
+	.mobileonly {
+		display: none;
+	}
+	.bigonly {
+		display: inline;
+	}
 }
