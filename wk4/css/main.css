@@ -25,7 +25,6 @@ nav ol li {
 	height: 5em;
 	text-align: center;
 	margin: 5% auto;
-	border: 1px solid #000;
 	position: relative;
 	overflow: hidden;
 }
@@ -36,6 +35,9 @@ nav ol li p {
 }
 .bigonly {
 	display: none;
+}
+img.button {
+	border: 1px solid #000;
 }
 
 img.button:hover {
