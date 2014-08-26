@@ -1,0 +1,37 @@
+/*
+main.css
+*/
+
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+
+}
+nav ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+nav ol li {
+	width: 80%;
+	height: 5em;
+	text-align: center;
+	margin: 1% auto;
+	border: 1px solid #000;
+}
+
+
+
+hgroup {
+	border-bottom: 1px solid #000;
+	padding-bottom: 1%;
+}
+hgroup * {
+	margin: 0;
+}
+
+article {
+	border-top: 1px solid #000;
+	margin-top: 30px
+}
