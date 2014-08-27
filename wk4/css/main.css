@@ -3,6 +3,17 @@ main.css
 */
 
 /** Default styles are for MOBILE devices **/
+body {
+	background: rgb(181,189,200);
+	background: -moz-linear-gradient(top,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1)));
+	background: -webkit-linear-gradient(top,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+	background: -o-linear-gradient(top,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+	background: linear-gradient(to bottom,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 );
+
+}
 #wrapper {
 	width: 100%;
 	margin: 0 auto;
@@ -28,6 +39,15 @@ nav ol li {
 	margin: 5% auto;
 	position: relative;
 	overflow: hidden;
+	
+	-webkit-box-shadow: 5px 5px 15px 0px rgba(8, 22, 50, 0.74);
+	-moz-box-shadow: 5px 5px 15px 0px rgba(8, 22, 50, 0.74);
+	box-shadow: 5px 5px 15px 0px rgba(8, 22, 50, 0.74);
+}
+nav ol li:hover{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 nav ol li p {
@@ -48,6 +68,10 @@ img.button:hover {
 	right: 0;
 }
 
+.bannermain {
+	display: none;
+}
+
 hgroup {
 	border-bottom: 1px solid #000;
 	padding-bottom: 1%;
@@ -58,15 +82,50 @@ hgroup * {
 
 article {
 	border-top: 1px solid #000;
-	margin-top: 75px
+	border-radius: 10px;
+	margin-top: 75px;
+	padding: 3%;
+	background-color: #fff;
+
 }
+
+
+
+
+
+
+
+
 
 
 @media only screen and (min-width: 700px) {
 	.mobileonly {
 		display: none;
 	}
-	.bigonly {
+
+
+	nav {
+		width: 80%;
+		margin: 2% auto;
+	}
+	nav ol {
+		margin: 1% auto;
+	}
+
+	nav ol li {
+		width: 40%;
+		max-width: 310px;
+		margin-right: 5%;
+
+
+		float: left;
+	}
+
+	.bannermain {
 		display: inline;
+	}
+
+	.main {
+		float: left;
 	}
 }
