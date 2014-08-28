@@ -28,6 +28,14 @@ body {
 	background: linear-gradient(to bottom,  rgba(15,24,48,1) 57%,rgba(32,32,36,1) 99%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1830', endColorstr='#202024',GradientType=0 );
 }
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    font-weight: bold;
+}
 #wrapper {
 	width: 100%;
 	margin: 0 auto;
@@ -214,6 +222,12 @@ a {
 		float: left;
 		text-align: center;
 	}
+	a.ctalink {
+		color: #202024;
+	}
+	a.ctalink:hover {
+		color: #E6E7E8;
+	}
 	.ctalink {
 		text-decoration: none;
 		border-radius: 0;
@@ -247,7 +261,7 @@ a {
 		padding-bottom: 10px;
 		text-align: center;
 		font-weight: bold;
-		font-size: 1.5em;
+		font-size: 1.3em;
 		font-family: 'Play', sans-serif;
 		color: #202024;
 
@@ -280,10 +294,10 @@ a {
 
 		color: #E6E7E8;
 	}
+
+
 	#cta p:first-child {  
 		border-top: none;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
 	}
 	#cta p:first-child:hover {
 
