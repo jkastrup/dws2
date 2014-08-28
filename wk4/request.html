@@ -30,11 +30,23 @@
   
   <body>
   	<div id="container">
-
+      <nav>
+        <ol>
+          <a href="index.html"><li class="nav"><p>Home</p></li></a>
+          <a href="reviews.html"><li class="nav"><p>Reviews</p></li></a>          
+          <a href="request.html"><li class="nav"><p>Requests</p></li></a>
+          <a href="about.html"><li class="nav"><p>About Us</p></li></a>
+          <a href="contact.html"><li class="nav"><p>Contact Us</p></li></a>
+        </ol>
+      </nav><!-- end nav -->
 
   		<form id="form" class="main">
   			<h2>Request a Game Review</h2>
+
+        <div class="button top"><a href="index.html" class="homebtn">Home</a></div>
+        
         <fieldset title="Contact Information">
+          <legend>Step 1</legend>
   				<legend>Contact Information</legend>
   				<ol>
   					<li>
@@ -57,6 +69,7 @@
   			</fieldset>
 
   			<fieldset title="Review Request Information">
+          <legend>Step 2</legend>
   				<legend>Review Request Information</legend>
   				<ol>
   					<li>
@@ -112,6 +125,7 @@
   			</fieldset>
 
   			<fieldset title="Quick Survey">
+          <legend>Step 3</legend>
   				<legend>Quick Survey</legend>
           <ol>
             <li>
@@ -178,7 +192,7 @@
             </li>
           </ol>
            <br>
-           <div class="button"><a href="javascript:history.back(-1);">Back</a></div>
+           <div class="button"><a href="index.html" class="homebtn">Home</a></div>
           <button type="submit" class="submitbtn">Submit Request</button>
           <br>
           <br>
